@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Loader styles */
+.loader-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.loader-svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.loader-circle {
+  animation: loader-animation 2s linear infinite;
+}
+
+@keyframes loader-animation {
+  0% {
+    stroke-dashoffset: 283;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Home component styles */
+.icon-size {
+  width: 40px;
+  height: 40px;
+}
+
+.scroll-loop {
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
